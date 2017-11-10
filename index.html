@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Belajar AngularJs</title>
+
+  </head>
+  <body ng-app="MyApp">
+    <div ng-controller="MainController"> 
+  {{title}} 
+  <hr/> 
+
+  Angka 1 :<input type="text" ng-model="angkaA"> </br> 
+  Angka 2 :<input type="text" ng-model="angkaB"> </br> 
+  Hasil : {{hasil}} 
+  </br> 
+  </br> 
+  <button ng-click="penambahan()">+</button> 
+  <button ng-click="pengurangan()">-</button> 
+  <button ng-click="perkalian()">*</button> 
+  <button ng-click="pembagian()">/</button> 
+</div>
+
+        <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/MainController.js"></script>
+  </body>
+</html>
